@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RobotizationProject xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <Dependencies>
+    <ProjectDependency>
+      <Dependencies />
+      <FileName>azureappservice-python364x86.3.6.4.4.nupkg</FileName>
+      <Hash>ijFiKb1K9rFrsXYSWc4CfqlvfkAY2JS1/mPcWqMkXUE=</Hash>
+      <Id>azureappservice-python364x86</Id>
+      <MasterUrl i:nil="true" />
+      <Name>azureappservice-python364x86</Name>
+      <ServerUrl>nuget.org</ServerUrl>
+      <Version>3.6.4.4</Version>
+    </ProjectDependency>
+    <ProjectDependency>
+      <Dependencies />
+      <FileName>python-embed.3.6.1.1.nupkg</FileName>
+      <Hash>jmTy2nfBda4s34Aa20Rgw8MB45NyfqHjKjZp8s9tApo=</Hash>
+      <Id>python-embed</Id>
+      <MasterUrl i:nil="true" />
+      <Name>python-embed</Name>
+      <ServerUrl>nuget.org</ServerUrl>
+      <Version>3.6.1.1</Version>
+    </ProjectDependency>
+    <ProjectDependency>
+      <Dependencies />
+      <FileName>Microsoft.NET.Runtime.Emscripten.3.1.34.Python.osx-arm64.9.0.0-preview.6.24327.1.nupkg</FileName>
+      <Hash>QAk1DldLFjtV179W6Q2o3dOl3BwVYOJxLDIs0Y8dXbY=</Hash>
+      <Id>Microsoft.NET.Runtime.Emscripten.3.1.34.Python.osx-arm64</Id>
+      <MasterUrl i:nil="true" />
+      <Name>Microsoft.NET.Runtime.Emscripten.3.1.34.Python.osx-arm64</Name>
+      <ServerUrl>nuget.org</ServerUrl>
+      <Version>9.0.0-preview.6.24327.1</Version>
+    </ProjectDependency>
+    <ProjectDependency>
+      <Dependencies />
+      <FileName>azureappservice-python354x86.3.5.4.5.nupkg</FileName>
+      <Hash>rU/byBAZViEXuVmwRzKhmb6jIw15L05nRI6JGjGu6uo=</Hash>
+      <Id>azureappservice-python354x86</Id>
+      <MasterUrl i:nil="true" />
+      <Name>azureappservice-python354x86</Name>
+      <ServerUrl>nuget.org</ServerUrl>
+      <Version>3.5.4.5</Version>
+    </ProjectDependency>
+  </Dependencies>
+  <Description></Description>
+  <Files>
+    <ProjectFileItem z:Id="i2">
+      <IsMain>true</IsMain>
+      <Path>main.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i3">
+      <IsMain>false</IsMain>
+      <Path>CustomScripts\RpaWeb.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i4">
+      <IsMain>false</IsMain>
+      <Path>upload_to_onedrive.py</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i5">
+      <IsMain>false</IsMain>
+      <Path>Data\input\Productos_2025-06-20.json</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i6">
+      <IsMain>false</IsMain>
+      <Path>upload_to_onedrive_runner.py</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i7">
+      <IsMain>false</IsMain>
+      <Path>RPA\Reporte_2025-06-20.xlsx</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i8">
+      <IsMain>false</IsMain>
+      <Path>RPA\Reporte_2025-06-22.xlsx</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i9">
+      <IsMain>false</IsMain>
+      <Path>CustomScripts\TakeScreenshot.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i10">
+      <IsMain>false</IsMain>
+      <Path>CustomScripts\OneDrive.pix</Path>
+    </ProjectFileItem>
+  </Files>
+  <MasterUploadId i:nil="true" />
+  <Name>PruebaTecnicaRpa</Name>
+  <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>3</d2p1:_Build>
+    <d2p1:_Major>2</d2p1:_Major>
+    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </PlatformVersion>
+  <ProjectMaterUploadIds />
+  <ProjectNamespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <d2p1:string>System</d2p1:string>
+    <d2p1:string>System.IO</d2p1:string>
+    <d2p1:string>System.Collections.Generic</d2p1:string>
+    <d2p1:string>System.Linq</d2p1:string>
+    <d2p1:string>System.Data</d2p1:string>
+    <d2p1:string>System.Xml.Linq</d2p1:string>
+    <d2p1:string>Newtonsoft.Json</d2p1:string>
+  </ProjectNamespaces>
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>-1</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>-1</d2p1:_Revision>
+  </Version>
+</RobotizationProject>

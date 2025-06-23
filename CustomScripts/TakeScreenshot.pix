@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>a3100a77-c141-419e-8d53-b792507e7528</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>6e60cd84-81f6-4ef4-b244-5bdf31b359ee</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Getting started with a screenshot."</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Escriba un registro de "Introducción a la captura de pantalla".</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i5" i:type="CommentStep">
+        <Childs />
+        <Id>aa026e15-7e00-490d-8642-1c59bd44d7e1</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <IsCollapsed>false</IsCollapsed>
+        <Text>Verificamos si existe la ruta</Text>
+      </AbstractStep>
+      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i7" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i8" i:type="ExecutedStep">
+                <Childs />
+                <Id>873f378d-75a4-450b-9199-f0456285f234</Id>
+                <Parent z:Ref="i7" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i9">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>Path.Combine(Directory, "ExceptionScreenshot_"+DateTime.Now.ToString("yyMMdd.hhmmss")+".png")</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i10">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>FilePath</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Inicializamos FilePath</Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>051fa295-f0d1-4880-9605-63fca735144b</Id>
+            <Parent z:Ref="i6" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i11" i:type="ExecutedStep">
+            <Childs />
+            <Id>862d32a9-7ce2-4dfe-adee-51302a6d15a2</Id>
+            <Parent z:Ref="i6" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>95e792f0-b652-4125-ab2a-a9ceba265f14</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i12">
+            <PropertyName>Condition</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>String.IsNullOrEmpty(FilePath)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>¿No se especifica la ruta del archivo?</Text>
+        <_activityFullName>BR.Core.Base.If</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i13" i:type="ExecutedStep">
+        <Childs />
+        <Id>475b7907-ec4b-4944-b4ab-da58ad2e07c9</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i14">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>new FileInfo(FilePath)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i15">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>screenshotFileInfo</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Declaramos screenshotFileInfo</Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i16" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i17" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i18" i:type="ExecutedStep">
+                <Childs />
+                <Id>6767e97d-ce00-4cf5-819f-16c82c4bb6a3</Id>
+                <Parent z:Ref="i17" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i19">
+                    <PropertyName>NewFolderPath</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>screenshotFileInfo.DirectoryName</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Creamos la carpeta para guardar las capturas</Text>
+                <_activityFullName>Activities.Files.CreateFolder</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>74b99d50-9f85-419a-8153-19f0ddba4d80</Id>
+            <Parent z:Ref="i16" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i20" i:type="ExecutedStep">
+            <Childs />
+            <Id>cad11bc7-4894-4475-9122-50c53d7754b1</Id>
+            <Parent z:Ref="i16" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <AutoCloseMode>None</AutoCloseMode>
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>e207c532-bc2c-412b-8992-f355803b9a51</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i21">
+            <PropertyName>Condition</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>!System.IO.Directory.Exists(screenshotFileInfo.DirectoryName)</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>¿No hay ninguna carpeta para guardar la captura de pantalla?</Text>
+        <_activityFullName>BR.Core.Base.If</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i22" i:type="CommentStep">
+        <Childs />
+        <Id>9a16350e-da42-4e25-b20c-70b7490c09a2</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues />
+        <SelectedOptionId i:nil="true" />
+        <IsCollapsed>false</IsCollapsed>
+        <Text>Se toma la captura de pantalla</Text>
+      </AbstractStep>
+      <AbstractStep z:Id="i23" i:type="ExecutedStep">
+        <Childs />
+        <Id>d79ee7a7-b792-4cc8-bc2d-0c35e8adc2cf</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i24">
+            <PropertyName>ImagePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>FilePath</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Toma una captura de pantalla.</Text>
+        <_activityFullName>Activities.Desktop.DoScreenshot</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i25" i:type="ExecutedStep">
+        <Childs />
+        <Id>fcf459eb-cd28-410f-875c-360e72f9fc9d</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i26">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Ending with a screenshot."</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Escribe un registro "Fin del trabajo con captura de pantalla"</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>93bb5463-096e-4800-96ec-6d9e44385791</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <AutoCloseMode>None</AutoCloseMode>
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>TakeScreenshot.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i27">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>Directory</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i28">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>FilePath</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+  </Params>
+  <PlatformVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>3</d2p1:_Build>
+    <d2p1:_Major>2</d2p1:_Major>
+    <d2p1:_Minor>27</d2p1:_Minor>
+    <d2p1:_Revision>0</d2p1:_Revision>
+  </PlatformVersion>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>

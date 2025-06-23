@@ -1,0 +1,39 @@
+[2025-06-23 10:12:52] === EJECUCIÓN INICIADA ===
+[2025-06-23 10:12:52] Directorio actual: C:\Users\Owner\AppData\Local\PIX\Projects\PruebaTecnicaRpa
+[2025-06-23 10:12:52] Iniciando proceso de subida a OneDrive
+[2025-06-23 10:12:52] Buscando archivos .xlsx...
+[2025-06-23 10:12:52] Encontrados en ./RPA/*.xlsx: ['./RPA\\Reporte_2025-06-20.xlsx', './RPA\\Reporte_2025-06-22.xlsx', './RPA\\Reporte_2025-06-23.xlsx']
+[2025-06-23 10:12:52] Intentando renovar token...
+[2025-06-23 10:12:53] Token renovado correctamente.
+[2025-06-23 10:12:53] Verificando conexión a OneDrive...
+[2025-06-23 10:12:54] Conexión a OneDrive exitosa.
+[2025-06-23 10:12:54] Subiendo archivo: ./RPA\Reporte_2025-06-23.xlsx
+[2025-06-23 10:12:55] Archivo subido correctamente: Reporte_2025-06-23.xlsx
+[2025-06-23 10:12:55] Proceso completado exitosamente.
+[2025-06-23 10:12:55] === EJECUCIÓN FINALIZADA ===
+[2025-06-23 10:28:31] === EJECUCIÓN INICIADA ===
+[2025-06-23 10:28:31] Directorio actual: C:\Users\Owner\AppData\Local\PIX\Projects\PruebaTecnicaRpa
+[2025-06-23 10:28:31] Iniciando proceso de subida a OneDrive
+[2025-06-23 10:28:31] Buscando archivos .xlsx...
+[2025-06-23 10:28:31] Encontrados en ./RPA/*.xlsx: ['./RPA\\Reporte_2025-06-20.xlsx', './RPA\\Reporte_2025-06-22.xlsx', './RPA\\Reporte_2025-06-23.xlsx']
+[2025-06-23 10:28:31] Intentando renovar token...
+[2025-06-23 10:28:32] Token renovado correctamente.
+[2025-06-23 10:28:32] Verificando conexión a OneDrive...
+[2025-06-23 10:28:33] Conexión a OneDrive exitosa.
+[2025-06-23 10:28:33] Subiendo archivo: ./RPA\Reporte_2025-06-23.xlsx
+[2025-06-23 10:28:34] Archivo subido correctamente: Reporte_2025-06-23.xlsx
+[2025-06-23 10:28:34] Proceso completado exitosamente.
+[2025-06-23 10:28:34] === EJECUCIÓN FINALIZADA ===
+[2025-06-23 10:39:06] === EJECUCIÓN INICIADA ===
+[2025-06-23 10:39:06] Directorio actual: C:\Users\Owner\AppData\Local\PIX\Projects\PruebaTecnicaRpa
+[2025-06-23 10:39:06] Iniciando proceso de subida a OneDrive
+[2025-06-23 10:39:06] Buscando archivos .xlsx...
+[2025-06-23 10:39:06] Encontrados en ./RPA/*.xlsx: ['./RPA\\Reporte_2025-06-20.xlsx', './RPA\\Reporte_2025-06-22.xlsx', './RPA\\Reporte_2025-06-23.xlsx']
+[2025-06-23 10:39:06] Intentando renovar token...
+[2025-06-23 10:39:06] Token renovado correctamente.
+[2025-06-23 10:39:06] Verificando conexión a OneDrive...
+[2025-06-23 10:39:08] Conexión a OneDrive exitosa.
+[2025-06-23 10:39:08] Subiendo archivo: ./RPA\Reporte_2025-06-23.xlsx
+[2025-06-23 10:39:09] Archivo subido correctamente: Reporte_2025-06-23.xlsx
+[2025-06-23 10:39:09] Proceso completado exitosamente.
+[2025-06-23 10:39:09] === EJECUCIÓN FINALIZADA ===
